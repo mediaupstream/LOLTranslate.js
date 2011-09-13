@@ -152,19 +152,4 @@ var LOLTranslate = function(str, c){
 	}
 	return (c) ? str.toUpperCase() : str;
 	
-	
-	/* --- old method, maybe slower ---
-	for (key in dictionary){
-		var re = new RegExp(key, "g");
-		var replace = dictionary[key];
-		if(typeof replace == 'object'){
-			// pick a random one
-			var i = Math.floor(Math.random() * replace.length);
-			replace = replace[i];
-		}
-		str = str.replace(re, replace);
-	}
-	return str.toUpperCase();
-	*/
-	
 };
