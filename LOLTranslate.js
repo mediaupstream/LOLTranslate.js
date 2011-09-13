@@ -151,5 +151,4 @@ var LOLTranslate = function(str, c){
 		str = str.replace(matches[i], replace);
 	}
 	return (c) ? str.toUpperCase() : str;
-	
 };
