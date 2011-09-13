@@ -42,7 +42,7 @@ TEH SOFTWAR.
 */
 
 var LOLTranslate = function(str, c){
-	var c = (typeof c === 'undefined' || c == false) ? false : true;
+	var c = (typeof c === 'undefined' || c == true) ? true : false;
 	var regExp = '';
 	var dictionary = 	{
 		'i can have': "i can has",
