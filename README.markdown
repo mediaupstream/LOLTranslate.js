@@ -14,7 +14,7 @@ You can pass false as a second param to return lowercase output:
 	var catSays = LOLTranslate('Hello World', false);
 	console.log(catSays); // outputs 'oh hai wurrld'
 
-that's about it... have fun!  
+Also check out the `bookmarklet.js` script, use it to LOLTranslate entire webpages on the fly :)
 
 ---
 
