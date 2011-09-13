@@ -7,12 +7,11 @@
 	Include this file in your project source and now you can translate a string
 	to LolSpeak like so  
 	
-			var catSays = LOLTranslate('Hello World'); // outputs 'oh hai whirld'
+			var catSays = LOLTranslate('Hello World'); // outputs 'OH HAI WHIRLD'
 	
-	You can pass a second optional paramater true | false to make the output
-	all uppercased:
+	You can pass false as a second param to return lowercase output:  
 	
-			var catSays = LOLTranslate('Hello World', true); // outputs 'OH HAI WURRLD'
+			var catSays = LOLTranslate('Hello World', false); // outputs 'oh hai wurrld'
 	
 	that's about it... have fun!
 	
