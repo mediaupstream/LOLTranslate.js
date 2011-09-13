@@ -20,23 +20,25 @@
   ----------------------------------------------------------
 Copyright (C) 2011 by Derek Anderson / Media Upstream
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+MIT LICENSE
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+PRMARSHUN AR TEH HREBY GRANTED, FREE OV CHARGE, TO ANY PRSON OBTAININS A COPY
+OV THIZ SOVTWAR AN AZSOCIATED DOCUMENTAZHUN FILES (TEH "SOVTWR"), TO DEAL
+IN TEH SOVTWAR WITHOUT RESTRICSHUN, INCLUDIN WITHOUT LIMITASHUN TEH RITES
+TO USE, COPY, MODIFY, MRGE, PUBLAR TEHH, DARTRIBUTE, SUBLICENSE, AN/OR SELL
+COPIES OV TEH SOVTWR, AN TO PRMIT PRSONS TO HOOM TEH SOFTWAR AR TEH
+FURNARHED TO DO SO, SUBJECT TO TEH FOLLOWNG CONARHUNS:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+TEH ABOOVE COPYRITE NOTICE AN THIZ PRMARSHUN NOTICE SHALL BE INCLUDED IN
+ALL COPIES OR SUBSTANTIAL PORSHUNS OF TEH SOFTWR.
+
+TEH SOFTWAR AR PROVIDED "AS AR", WITHOUT WARRANTY OF ANY KIN, EXPRESS OR
+IMPLIED, INCLUDIN BUT NOT LIMITED TO TEH WARRANTIES OF MRCHANTABILITY,
+FITNESS FOAR A PARTICULAR PURPOZE AN NONINFRNGEMENT. IN NO EVENT SHALL TEH
+AUTHORS OR COPYRITE HOLDRS BE LIABLE 4 ANY CLAIM, DAMUJS OR UDDR
+LIABILITY, WHETEHR IN AN ACSHUN OF CONTRACT, TORT OR UDDRWISE, ARISINS FROM,
+OUT OF OR IN CONNECSHUN WITH TEH SOFTWIS OR TEH USE OR UDDR DEALINGS IN
+TEH SOFTWAR.
 */
 
 var LOLTranslate = function(str, c){
@@ -138,7 +140,7 @@ var LOLTranslate = function(str, c){
 	}
 	regExp = regExp.slice(0, -1);
 	
-	var match = new RegExp(regExp, 'g');
+	var match = new RegExp(regExp, 'gm');
 	var matches = str.match(match);
 	// nothing to replace, return home...
 	if(!matches){ return (c) ? str.toUpperCase() : str; }

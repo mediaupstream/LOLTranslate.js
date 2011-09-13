@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LOLChat</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script src="LOLTranslate.js"></script>
+	<style type="text/css" media="screen">
+		body {
+			padding:10px; margin:0;
+		}
+		h3 {
+			font-size:30px;
+			font-family:Helvetica, sans-serif;
+			color:#fff;
+			text-shadow:1px 1px 1px #555;
+			margin:-10px -10px 20px -10px; 
+			padding:4px 10px;
+			background-color: #DE98CE;
+		}
+		#str, #resultz {
+			width:100%;
+			height:200px;
+			font-size:24px;
+			border:1px solid #DE98CE;
+			-moz-border-radius: 	 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 				 4px;
+			color:#CA355B;
+			padding:10px;
+			margin-bottom:15px;
+		}
+		#str { border-color:#53C9FF; color:#046380;}
+	</style>
+	
+	<script type="text/javascript" charset="utf-8">
+	$(function(){
+		var source = $('#str');
+		var resultz = $('#resultz');
+		
+		source.keyup(function(e){
+			resultz.val( LOLTranslate(source.val(), true) );
+		});
+		
+	});
+	</script>
+</head>
+<body>
+	<h3>Talk like a KITTEH</h3>
+	<textarea name="str" id="str"></textarea>
+	<textarea name="resultz" id="resultz"></textarea>
+</body>
+</html>
